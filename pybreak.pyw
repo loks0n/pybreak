@@ -19,11 +19,11 @@ BREAK_ICON = 0x40000
 MessageBox = ctypes.windll.user32.MessageBoxW
 
 def main():
-    loop_thread = threading.Thread(target=loop, daemon=True)
-    loop_thread.start()
+    thread = threading.Thread(target=loop, daemon=True)
+    thread.start()
     menu_popup()
 
-def loop(i):
+def loop():
     while True:
         time.sleep(WORK_DURATION)
         if i % LONG_BREAK_EVERY == 0:
