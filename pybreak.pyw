@@ -6,7 +6,6 @@ import ctypes
 
 WORK_DURATION = 600
 LONG_BREAK_EVERY = 4
-BREAK_EVERY = 4
 
 TITLE = 'pybreak'
 MAIN_MENU_TEXT = 'Press OK to end session.'
